@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndicatorViewController">
+            <connections>
+                <outlet property="myBtnDataIndication" destination="3tW-OV-EE7" id="QUy-jI-SnD"/>
+                <outlet property="myTblView" destination="Uny-6n-yvI" id="uqY-W9-Evt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uny-6n-yvI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Kg5-Tj-EE7"/>
+                        <outlet property="delegate" destination="-1" id="FJ1-1T-pDO"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tW-OV-EE7">
+                    <rect key="frame" x="280" y="528" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.29981610279999998" blue="0.26354720469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="MzQ-qL-UA6"/>
+                        <constraint firstAttribute="width" secondItem="3tW-OV-EE7" secondAttribute="height" multiplier="1:1" id="Qsj-iD-YkU"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3tW-OV-EE7" secondAttribute="bottom" constant="10" id="3jC-3F-GnU"/>
+                <constraint firstAttribute="trailing" secondItem="3tW-OV-EE7" secondAttribute="trailing" constant="10" id="6Wq-5i-7Wv"/>
+                <constraint firstItem="Uny-6n-yvI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QBm-Uf-5oe"/>
+                <constraint firstItem="Uny-6n-yvI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="a8g-H0-88Z"/>
+                <constraint firstAttribute="bottom" secondItem="Uny-6n-yvI" secondAttribute="bottom" id="fOc-jU-KZK"/>
+                <constraint firstAttribute="trailing" secondItem="Uny-6n-yvI" secondAttribute="trailing" id="wVI-Lb-h8F"/>
+            </constraints>
+            <point key="canvasLocation" x="-124" y="76"/>
+        </view>
+    </objects>
+</document>

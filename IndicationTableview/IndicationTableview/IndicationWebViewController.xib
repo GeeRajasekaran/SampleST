@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndicationWebViewController">
+            <connections>
+                <outlet property="myBtnIndication" destination="DNR-96-D8C" id="1VJ-zB-opd"/>
+                <outlet property="myWebView" destination="JqD-wY-AxC" id="uBL-Qo-PcQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JqD-wY-AxC">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="RPa-iQ-CnO"/>
+                    </connections>
+                </webView>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-96-D8C">
+                    <rect key="frame" x="280" y="440" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.29981610279999998" blue="0.26354720469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="4M3-Sb-NVl"/>
+                        <constraint firstAttribute="width" secondItem="DNR-96-D8C" secondAttribute="height" multiplier="1:1" id="U2T-Ga-1Hs"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JqD-wY-AxC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2VX-lV-s4f"/>
+                <constraint firstItem="JqD-wY-AxC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6yr-1p-OAV"/>
+                <constraint firstAttribute="bottom" secondItem="DNR-96-D8C" secondAttribute="bottom" constant="10" id="79S-Ok-soD"/>
+                <constraint firstAttribute="trailing" secondItem="DNR-96-D8C" secondAttribute="trailing" constant="10" id="AGt-J9-7sE"/>
+                <constraint firstAttribute="trailing" secondItem="JqD-wY-AxC" secondAttribute="trailing" id="T35-gP-LjP"/>
+                <constraint firstAttribute="bottom" secondItem="JqD-wY-AxC" secondAttribute="bottom" id="XO2-cX-q5i"/>
+            </constraints>
+            <point key="canvasLocation" x="-614" y="17"/>
+        </view>
+    </objects>
+</document>

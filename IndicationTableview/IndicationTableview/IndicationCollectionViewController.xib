@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndicationCollectionViewController">
+            <connections>
+                <outlet property="myBtnIndication" destination="Krk-Jm-1sh" id="NvK-OR-Tet"/>
+                <outlet property="myCollectionView" destination="apA-TA-OQ1" id="ej4-er-7bm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="apA-TA-OQ1">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Rts-LH-1aH">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4ZT-h9-71d"/>
+                        <outlet property="delegate" destination="-1" id="HdZ-Jm-7XW"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krk-Jm-1sh">
+                    <rect key="frame" x="280" y="440" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.29981610279999998" blue="0.26354720469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Krk-Jm-1sh" secondAttribute="height" multiplier="1:1" id="0dm-MW-oZX"/>
+                        <constraint firstAttribute="width" constant="30" id="jnl-2h-4Ly"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="apA-TA-OQ1" secondAttribute="trailing" id="HUs-25-csB"/>
+                <constraint firstItem="apA-TA-OQ1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lx2-p0-NX6"/>
+                <constraint firstAttribute="bottom" secondItem="apA-TA-OQ1" secondAttribute="bottom" id="bAs-Iy-To2"/>
+                <constraint firstItem="apA-TA-OQ1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o3J-0T-m64"/>
+                <constraint firstAttribute="trailing" secondItem="Krk-Jm-1sh" secondAttribute="trailing" constant="10" id="s8K-9R-iY4"/>
+                <constraint firstAttribute="bottom" secondItem="Krk-Jm-1sh" secondAttribute="bottom" constant="10" id="ulg-me-K4d"/>
+            </constraints>
+            <point key="canvasLocation" x="-1172" y="-202"/>
+        </view>
+    </objects>
+</document>

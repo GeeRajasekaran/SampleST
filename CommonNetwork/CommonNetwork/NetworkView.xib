@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12120"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetworkView" customModule="CommonNetwork" customModuleProvider="target">
+            <connections>
+                <outlet property="myViewLoading" destination="uz1-U6-gLg" id="fXV-8p-dwG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uz1-U6-gLg">
+                    <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                    <color key="backgroundColor" red="0.80784313730000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="W5W-Wj-xY8"/>
+                        <constraint firstAttribute="width" secondItem="uz1-U6-gLg" secondAttribute="height" multiplier="1:1" id="vzy-hD-acy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uz1-U6-gLg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XXm-PT-rx3"/>
+                <constraint firstItem="uz1-U6-gLg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cpI-Ga-6aH"/>
+            </constraints>
+            <point key="canvasLocation" x="-205" y="-42"/>
+        </view>
+    </objects>
+</document>
