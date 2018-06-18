@@ -1,0 +1,136 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So5TimerC", ""]
+- ["So5TimerC", "init"]
+- ["So5TimerC", "init"]
+- ["So5TimerC", "init"]
+- ["So5TimerC", "init"]
+- ["So5TimerC", "scheduledTimer"]
+- ["So5TimerC", "scheduledTimer"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyObject"
+- "Bool"
+- "BooleanLiteralType"
+- "Date"
+- !private "ParametizedAction"
+- "TimeInterval"
+- "Timer"
+- "Void"
+- !private "VoidAction"
+- !private "retainAction"
+depends-member:
+- !private ["7Actions6ActionP", "init"]
+- !private ["7Actions6ActionP", "selector"]
+- !private ["7Actions10ActionableP", "ParametizedAction"]
+- !private ["7Actions10ActionableP", "VoidAction"]
+- !private ["7Actions10ActionableP", "init"]
+- !private ["7Actions10ActionableP", "retainAction"]
+- !private ["7Actions10ActionableP", "scheduledTimer"]
+- !private ["s7CVarArgP", "ParametizedAction"]
+- !private ["s7CVarArgP", "VoidAction"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "retainAction"]
+- !private ["s7CVarArgP", "scheduledTimer"]
+- !private ["s28CustomDebugStringConvertibleP", "ParametizedAction"]
+- !private ["s28CustomDebugStringConvertibleP", "VoidAction"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "retainAction"]
+- !private ["s28CustomDebugStringConvertibleP", "scheduledTimer"]
+- !private ["s23CustomStringConvertibleP", "ParametizedAction"]
+- !private ["s23CustomStringConvertibleP", "VoidAction"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "retainAction"]
+- !private ["s23CustomStringConvertibleP", "scheduledTimer"]
+- !private ["s9EquatableP", "ParametizedAction"]
+- !private ["s9EquatableP", "VoidAction"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "retainAction"]
+- !private ["s9EquatableP", "scheduledTimer"]
+- !private ["s8HashableP", "ParametizedAction"]
+- !private ["s8HashableP", "VoidAction"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "retainAction"]
+- !private ["s8HashableP", "scheduledTimer"]
+- ["So8NSObjectC", "AnyObject"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "Date"]
+- !private ["So8NSObjectC", "ParametizedAction"]
+- ["So8NSObjectC", "TimeInterval"]
+- ["So8NSObjectC", "Timer"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "VoidAction"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "retainAction"]
+- ["So8NSObjectC", "scheduledTimer"]
+- !private ["So16NSObjectProtocolP", "ParametizedAction"]
+- !private ["So16NSObjectProtocolP", "VoidAction"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "retainAction"]
+- !private ["So16NSObjectProtocolP", "scheduledTimer"]
+- !private ["7Actions17ParametizedActionC", "deinit"]
+- !private ["7Actions17ParametizedActionC", "init"]
+- !private ["7Actions17ParametizedActionC", "selector"]
+- ["So5TimerC", "AnyObject"]
+- ["So5TimerC", "Bool"]
+- ["So5TimerC", "Date"]
+- !private ["So5TimerC", "ParametizedAction"]
+- ["So5TimerC", "TimeInterval"]
+- ["So5TimerC", "Timer"]
+- ["So5TimerC", "Void"]
+- !private ["So5TimerC", "VoidAction"]
+- ["So5TimerC", "init"]
+- !private ["So5TimerC", "retainAction"]
+- ["So5TimerC", "scheduledTimer"]
+- !private ["7Actions10VoidActionC", "deinit"]
+- !private ["7Actions10VoidActionC", "init"]
+- !private ["7Actions10VoidActionC", "selector"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ParametizedAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "VoidAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "retainAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scheduledTimer"]
+depends-nominal:
+- !private "7Actions6ActionP"
+- !private "7Actions10ActionableP"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9EquatableP"
+- !private "s8HashableP"
+- "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "7Actions17ParametizedActionC"
+- "So5TimerC"
+- !private "7Actions10VoidActionC"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/ostap_holub/Projects/June/Pods/Target Support Files/Actions/Actions-umbrella.h"
+- "/Users/ostap_holub/Projects/June/build/Pods.build/Debug-iphoneos/Actions.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "841a0b4b077c786cb248167d3ded0290"

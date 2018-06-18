@@ -1,0 +1,181 @@
+PODS:
+  - Actions (2.2.1)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.6.0)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - ALCameraViewController (3.0.2)
+  - AlertBar (0.3.3)
+  - AlignedCollectionViewFlowLayout (1.1.1)
+  - Bugsee (1.16.5)
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - Down (0.4.2)
+  - Fabric (1.7.2)
+  - Feathers (5.2.1):
+    - Feathers/Core (= 5.2.1)
+  - Feathers/Core (5.2.1):
+    - KeychainSwift
+    - ReactiveSwift
+    - Result
+  - FeathersSwiftSocketIO (3.1.2):
+    - FeathersSwiftSocketIO/Core (= 3.1.2)
+  - FeathersSwiftSocketIO/Core (3.1.2):
+    - Feathers
+    - Result
+    - Socket.IO-Client-Swift
+  - HanekeSwift (0.10.1)
+  - Instabug (7.10):
+    - Instabug/Instabug (= 7.10)
+    - Instabug/InstabugCore (= 7.10)
+  - Instabug/Instabug (7.10):
+    - Instabug/InstabugCore
+  - Instabug/InstabugCore (7.10)
+  - KeychainAccess (3.1.0)
+  - KeychainSwift (10.0.0)
+  - Kingfisher (4.5.0)
+  - KSTokenView (4.0.1)
+  - M13Checkbox (3.2.2)
+  - MarqueeLabel/Swift (3.1.4)
+  - MGEvents (1.1.0)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
+  - PromiseKit/Promise (1.7.2)
+  - ReachabilitySwift (4.1.0)
+  - ReactiveSwift (3.0.0):
+    - Result (~> 3.2)
+  - Result (3.2.4)
+  - RichEditorView (5.0.0)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - SGHTTPRequest/Core (1.8.2):
+    - AFNetworking (~> 3.0)
+    - MGEvents (~> 1.1)
+  - SGImageCache (2.4.0):
+    - AFNetworking
+    - MGEvents (~> 1.1)
+    - PromiseKit/Promise (~> 1.5)
+    - SGHTTPRequest/Core (~> 1.8)
+  - SnapKit (4.0.0)
+  - Socket.IO-Client-Swift (13.1.0):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.3)
+  - SwiftyJSON (4.0.0)
+  - SwipeCellKit (2.0.0)
+  - SwipyCell (3.2.0)
+  - ZAlertView (1.0.4)
+
+DEPENDENCIES:
+  - Actions
+  - AFNetworking
+  - Alamofire
+  - AlamofireImage
+  - ALCameraViewController
+  - AlertBar (from `https://github.com/lucyio/AlertBar.git`, branch `master`)
+  - AlignedCollectionViewFlowLayout
+  - Bugsee
+  - Crashlytics
+  - Down
+  - Fabric
+  - Feathers
+  - FeathersSwiftSocketIO
+  - HanekeSwift (from `https://github.com/Haneke/HanekeSwift.git`, branch `feature/swift-3`)
+  - Instabug
+  - KeychainAccess
+  - Kingfisher
+  - KSTokenView
+  - M13Checkbox
+  - MarqueeLabel/Swift
+  - NVActivityIndicatorView
+  - ReachabilitySwift
+  - ReactiveSwift
+  - RichEditorView
+  - SDWebImage
+  - SGImageCache
+  - SnapKit
+  - Socket.IO-Client-Swift
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - SwipeCellKit
+  - SwipyCell
+  - ZAlertView
+
+EXTERNAL SOURCES:
+  AlertBar:
+    :branch: master
+    :git: https://github.com/lucyio/AlertBar.git
+  HanekeSwift:
+    :branch: feature/swift-3
+    :git: https://github.com/Haneke/HanekeSwift.git
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  AlertBar:
+    :commit: 2e6bc9802c75e9d7815a4c7062c056f746331852
+    :git: https://github.com/lucyio/AlertBar.git
+  HanekeSwift:
+    :commit: 2f6d87f1f725d204d85cb34492e8c399cd5a200f
+    :git: https://github.com/Haneke/HanekeSwift.git
+  SwiftyJSON:
+    :commit: a1700fbb554857fabaa6278222ed31ff3aec3c1e
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Actions: 6158e6d06ebb505181726abfbca7cb0ca8356067
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  ALCameraViewController: 1edce3497633f0df138523645ed1228961ee2eab
+  AlertBar: 7ae48ca8dfa6ee12788e41c7844c7f6039449ef5
+  AlignedCollectionViewFlowLayout: 4e6bddb1012788d3ba2c70247a04a0ca6ced69d6
+  Bugsee: c2ace6b88376871a5f2bce3b9e376a5d15538fda
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  Down: 92efba7c95a8efdb84b7114e365db4a37f3df76e
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  Feathers: 97e27baaee089ab78d723268e7d94d7193bfaae9
+  FeathersSwiftSocketIO: 1415bb1897737dda4b7bd885e016f3f22a659548
+  HanekeSwift: 4113367892828e7700d24a384027de6ebc79aad1
+  Instabug: 8d003ac0ba31038b86c7ce51b17da050cf07d771
+  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  KeychainSwift: f9f7910449a0c0fd2cabc889121530dd2c477c33
+  Kingfisher: 26ae0473102b77b575da51960c932431e3745407
+  KSTokenView: 73bd70340b9f64b8324a55e5be5e9bd94a4d139e
+  M13Checkbox: a8c2491cfbbca10797925fd0b9154a782bf40d89
+  MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
+  MGEvents: 04c4c5b49a420a4895c5bb676ccc708311176d14
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  PromiseKit: 102844c7b5ccff53f693e0710365c445d8df3871
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  ReactiveSwift: d9fe0db33c1aaabecb092e8de83cf52875c0de6f
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RichEditorView: 1bbb07b87ca2d479ac29a6877014b38b8df233ef
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SGHTTPRequest: 619ea47680a7fefb9a5fd242ef27abd36fe2c72f
+  SGImageCache: b862fa71e46088f22ff4c0a558e5879c3e10da40
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Socket.IO-Client-Swift: b67a96d6a9e5f271bceb93e99779d2cf77c74868
+  Starscream: dfb1b3f39506717ee52b67fb48de0c8269504cbc
+  SwiftyJSON: 8cd73b154950360d79292a8dc8c0d0a85d258930
+  SwipeCellKit: 349c61ffde96ac3ae51c2691a03e421b5b29ee98
+  SwipyCell: 69798614496b09567cd549d2167eb50cef9822d1
+  ZAlertView: 59fffdb4e37a01df461835566d5101052b8af953
+
+PODFILE CHECKSUM: 53304ce1c09cf0d51af72d46341affcb44e90b81
+
+COCOAPODS: 1.4.0

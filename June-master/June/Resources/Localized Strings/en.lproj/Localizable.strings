@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  June
+
+  Created by Joshua Cleetus on 12/20/17.
+  Copyright © 2017 Joshua Cleetus. All rights reserved.
+*/
+
+// NavBar Title
+"NavBarClose" = "Close";
+
+// NavBar Title
+"NavBarCancel" = "Cancel";
+
+// NavBar Title
+"NavBarSend" = "Send";
+
+// NavBar Title
+"NavBarEdit" = "Edit";
+
+// NavBar Title
+"NavBarDone" = "Done";
+
+// NavBar Title
+"NavBarNext" = "Next";
+
+// NavBar Title
+"NavBarLoad" = "Load";
+
+// NavBar Title
+"NavBarSave" = "Save";
+
+// NavBar Title
+"NavBarAdd" = "Add";
+
+// NavBar Title
+"NavBarDelete" = "Delete";
+
+// NavBar Title
+"NavBarClaim" = "Claim";

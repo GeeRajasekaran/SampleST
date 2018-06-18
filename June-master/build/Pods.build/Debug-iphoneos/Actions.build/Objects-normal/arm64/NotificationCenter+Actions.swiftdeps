@@ -1,0 +1,284 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So18NotificationCenterC", ""]
+- ["So18NotificationCenterC", "observe"]
+- ["So18NotificationCenterC", "observe"]
+- ["So18NotificationCenterC", "add"]
+- ["So18NotificationCenterC", "add"]
+- ["So18NotificationCenterC", "stopObserving"]
+- ["So18NotificationCenterC", "stopObserver"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "&&"
+- !private "=="
+- !private "==="
+- "Action"
+- "AnyObject"
+- "AssignmentPrecedence"
+- !private "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "NSNotification"
+- "NSObject"
+- "NotificationCenter"
+- !private "NotificationCenterAction"
+- !private "NotificationCenterParametizedAction"
+- !private "NotificationCenterVoidAction"
+- !private "ParametizedAction"
+- !private "StringLiteralType"
+- "Void"
+- !private "VoidAction"
+- !private "releaseAction"
+- !private "retainAction"
+depends-member:
+- !private ["7Actions6ActionP", "AnyObject"]
+- !private ["7Actions6ActionP", "NSNotification"]
+- !private ["7Actions6ActionP", "init"]
+- !private ["7Actions6ActionP", "notificationName"]
+- !private ["7Actions6ActionP", "notificationObject"]
+- !private ["7Actions6ActionP", "selector"]
+- !private ["7Actions6ActionP", ""]
+- ["7Actions10ActionableP", "Name"]
+- !private ["7Actions10ActionableP", "NotificationCenter"]
+- !private ["7Actions10ActionableP", "NotificationCenterParametizedAction"]
+- !private ["7Actions10ActionableP", "NotificationCenterVoidAction"]
+- !private ["7Actions10ActionableP", "actions"]
+- !private ["7Actions10ActionableP", "addObserver"]
+- !private ["7Actions10ActionableP", "default"]
+- !private ["7Actions10ActionableP", "releaseAction"]
+- !private ["7Actions10ActionableP", "removeObserver"]
+- !private ["7Actions10ActionableP", "retainAction"]
+- !private ["7Actions10ActionableP", "stopObserving"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "Name"]
+- !private ["s7CVarArgP", "NotificationCenter"]
+- !private ["s7CVarArgP", "NotificationCenterParametizedAction"]
+- !private ["s7CVarArgP", "NotificationCenterVoidAction"]
+- !private ["s7CVarArgP", "actions"]
+- !private ["s7CVarArgP", "addObserver"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "releaseAction"]
+- !private ["s7CVarArgP", "removeObserver"]
+- !private ["s7CVarArgP", "retainAction"]
+- !private ["s7CVarArgP", "stopObserving"]
+- ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "NotificationCenter"]
+- !private ["s28CustomDebugStringConvertibleP", "NotificationCenterParametizedAction"]
+- !private ["s28CustomDebugStringConvertibleP", "NotificationCenterVoidAction"]
+- !private ["s28CustomDebugStringConvertibleP", "actions"]
+- !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "releaseAction"]
+- !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "retainAction"]
+- ["s28CustomDebugStringConvertibleP", "some"]
+- !private ["s28CustomDebugStringConvertibleP", "stopObserving"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "some"]
+- ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "NotificationCenter"]
+- !private ["s23CustomStringConvertibleP", "NotificationCenterParametizedAction"]
+- !private ["s23CustomStringConvertibleP", "NotificationCenterVoidAction"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "actions"]
+- !private ["s23CustomStringConvertibleP", "addObserver"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "releaseAction"]
+- !private ["s23CustomStringConvertibleP", "removeObserver"]
+- !private ["s23CustomStringConvertibleP", "retainAction"]
+- !private ["s23CustomStringConvertibleP", "stopObserving"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- ["s9DecodableP", "some"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- ["s9EncodableP", "some"]
+- ["s9EquatableP", "Name"]
+- !private ["s9EquatableP", "NotificationCenter"]
+- !private ["s9EquatableP", "NotificationCenterParametizedAction"]
+- !private ["s9EquatableP", "NotificationCenterVoidAction"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "actions"]
+- !private ["s9EquatableP", "addObserver"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "releaseAction"]
+- !private ["s9EquatableP", "removeObserver"]
+- !private ["s9EquatableP", "retainAction"]
+- !private ["s9EquatableP", "stopObserving"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s23ExpressibleByNilLiteralP", "some"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "Name"]
+- !private ["s8HashableP", "NotificationCenter"]
+- !private ["s8HashableP", "NotificationCenterParametizedAction"]
+- !private ["s8HashableP", "NotificationCenterVoidAction"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "actions"]
+- !private ["s8HashableP", "addObserver"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "releaseAction"]
+- !private ["s8HashableP", "removeObserver"]
+- !private ["s8HashableP", "retainAction"]
+- !private ["s8HashableP", "stopObserving"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["So8NSCodingP", "Name"]
+- ["So9NSCopyingP", "Name"]
+- ["So14NSNotificationC", "Name"]
+- ["So8NSObjectC", "Action"]
+- ["So8NSObjectC", "AnyObject"]
+- !private ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "NSNotification"]
+- ["So8NSObjectC", "NSObject"]
+- ["So8NSObjectC", "Name"]
+- !private ["So8NSObjectC", "NotificationCenter"]
+- !private ["So8NSObjectC", "NotificationCenterAction"]
+- !private ["So8NSObjectC", "NotificationCenterParametizedAction"]
+- !private ["So8NSObjectC", "NotificationCenterVoidAction"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "actions"]
+- ["So8NSObjectC", "add"]
+- !private ["So8NSObjectC", "addObserver"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "deinit"]
+- ["So8NSObjectC", "observe"]
+- !private ["So8NSObjectC", "releaseAction"]
+- !private ["So8NSObjectC", "removeObserver"]
+- !private ["So8NSObjectC", "retainAction"]
+- ["So8NSObjectC", "stopObserver"]
+- ["So8NSObjectC", "stopObserving"]
+- ["So16NSObjectProtocolP", "Name"]
+- !private ["So16NSObjectProtocolP", "NotificationCenter"]
+- !private ["So16NSObjectProtocolP", "NotificationCenterParametizedAction"]
+- !private ["So16NSObjectProtocolP", "NotificationCenterVoidAction"]
+- !private ["So16NSObjectProtocolP", "actions"]
+- !private ["So16NSObjectProtocolP", "addObserver"]
+- !private ["So16NSObjectProtocolP", "default"]
+- !private ["So16NSObjectProtocolP", "releaseAction"]
+- !private ["So16NSObjectProtocolP", "removeObserver"]
+- !private ["So16NSObjectProtocolP", "retainAction"]
+- !private ["So16NSObjectProtocolP", "stopObserving"]
+- ["So18NotificationCenterC", "Action"]
+- ["So18NotificationCenterC", "AnyObject"]
+- !private ["So18NotificationCenterC", "Bool"]
+- ["So18NotificationCenterC", "NSNotification"]
+- ["So18NotificationCenterC", "NSObject"]
+- !private ["So18NotificationCenterC", "NotificationCenter"]
+- !private ["So18NotificationCenterC", "NotificationCenterAction"]
+- !private ["So18NotificationCenterC", "NotificationCenterParametizedAction"]
+- !private ["So18NotificationCenterC", "NotificationCenterVoidAction"]
+- ["So18NotificationCenterC", "Void"]
+- ["So18NotificationCenterC", "add"]
+- !private ["So18NotificationCenterC", "addObserver"]
+- !private ["So18NotificationCenterC", "default"]
+- ["So18NotificationCenterC", "observe"]
+- !private ["So18NotificationCenterC", "releaseAction"]
+- !private ["So18NotificationCenterC", "removeObserver"]
+- !private ["So18NotificationCenterC", "retainAction"]
+- ["So18NotificationCenterC", "stopObserver"]
+- ["So18NotificationCenterC", "stopObserving"]
+- ["Sq", "some"]
+- !private ["7Actions17ParametizedActionC", "AnyObject"]
+- !private ["7Actions17ParametizedActionC", "NSNotification"]
+- !private ["7Actions17ParametizedActionC", "Void"]
+- !private ["7Actions17ParametizedActionC", "init"]
+- !private ["7Actions17ParametizedActionC", "notificationName"]
+- !private ["7Actions17ParametizedActionC", "notificationObject"]
+- !private ["7Actions17ParametizedActionC", "selector"]
+- !private ["7Actions17ParametizedActionC", ""]
+- !private ["s12StaticStringV", "init"]
+- !private ["7Actions10VoidActionC", "AnyObject"]
+- !private ["7Actions10VoidActionC", "NSNotification"]
+- !private ["7Actions10VoidActionC", "Void"]
+- !private ["7Actions10VoidActionC", "init"]
+- !private ["7Actions10VoidActionC", "notificationName"]
+- !private ["7Actions10VoidActionC", "notificationObject"]
+- !private ["7Actions10VoidActionC", "selector"]
+- !private ["7Actions10VoidActionC", ""]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "Name"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenterParametizedAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenterVoidAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "actions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "releaseAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "retainAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stopObserving"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "some"]
+depends-nominal:
+- !private "7Actions6ActionP"
+- "7Actions10ActionableP"
+- !private "Sb"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So14NSNotificationC"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So18NotificationCenterC"
+- "Sq"
+- !private "7Actions17ParametizedActionC"
+- !private "s12StaticStringV"
+- !private "7Actions10VoidActionC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/ostap_holub/Projects/June/Pods/Target Support Files/Actions/Actions-umbrella.h"
+- "/Users/ostap_holub/Projects/June/build/Pods.build/Debug-iphoneos/Actions.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "c88a13a7b04177b01344804103056d5f"

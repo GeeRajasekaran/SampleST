@@ -1,0 +1,64 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'June' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  # ignore all warnings from all pods
+  inhibit_all_warnings!
+
+  pod 'Fabric'
+  pod 'Crashlytics'
+  pod 'AFNetworking'
+  pod 'SnapKit'
+  pod 'ReachabilitySwift'
+  pod 'ReactiveSwift', :inhibit_warnings => true
+  pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+  pod 'KeychainAccess'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'NVActivityIndicatorView'
+  pod 'AlertBar', :git => 'https://github.com/lucyio/AlertBar.git', :branch => 'master'
+  pod 'Feathers'
+  pod 'FeathersSwiftSocketIO', :inhibit_warnings => true
+  pod 'Socket.IO-Client-Swift', :inhibit_warnings => true
+  pod 'ZAlertView'
+  pod 'ALCameraViewController'
+  pod 'SGImageCache'
+  pod 'Kingfisher'
+  pod 'KSTokenView'
+  pod 'HanekeSwift', :git => 'https://github.com/Haneke/HanekeSwift.git', :branch => 'feature/swift-3'
+  pod 'SwipeCellKit'
+  pod 'Down', :inhibit_warnings => true
+  pod 'MarqueeLabel/Swift'
+  pod 'SwipyCell'
+  pod 'AlignedCollectionViewFlowLayout'
+  pod 'Actions'
+  pod 'Bugsee'
+  pod 'Instabug'
+  pod 'SDWebImage'
+  pod 'M13Checkbox'
+  pod 'RichEditorView'
+
+  post_install do |installer|
+      installer.pods_project.targets.each do |target|
+          target.build_configurations.each do |config|
+              other_swift_flags = config.build_settings['OTHER_SWIFT_FLAGS'] || ['$(inherited)']
+              other_swift_flags << '-Xfrontend'
+              other_swift_flags << '-debug-time-function-bodies'
+              config.build_settings['OTHER_SWIFT_FLAGS'] = other_swift_flags
+          end
+      end
+  end
+
+  target 'JuneTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'JuneUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

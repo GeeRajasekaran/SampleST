@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/ostap_holub/Projects/June/build/Debug-iphoneos/Actions/Actions.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Actions-Swift.h",
+          'external-contents': "/Users/ostap_holub/Projects/June/build/Debug-iphoneos/Actions/Actions.framework/Headers/Actions-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Actions-umbrella.h",
+          'external-contents': "/Users/ostap_holub/Projects/June/Pods/Target Support Files/Actions/Actions-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ostap_holub/Projects/June/build/Debug-iphoneos/Actions/Actions.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/ostap_holub/Projects/June/build/Pods.build/Debug-iphoneos/Actions.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

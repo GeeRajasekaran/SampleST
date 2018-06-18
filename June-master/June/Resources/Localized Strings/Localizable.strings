@@ -1,0 +1,487 @@
+/* 
+  Localizable.strings
+  June
+
+  Created by Tatia Chachua on 02/01/18.
+  Copyright © 2018 Joshua Cleetus. All rights reserved.
+*/
+
+// Login title
+"LoginViewLoginButtonTitle" = "Log In";
+
+// LoginViewController Login Label Title
+"LoginViewLoginLabelTitle" = "Log In";
+
+// LoginViewController Username Info Textfield placeholder
+"LoginViewUsernameInfoPlaceholderTitle" = "Enter username or email";
+
+// LoginViewController Password Info TextFielwd Placeholder Title
+"LoginViewPasswordInfoPlaceholderTitle" = "Enter password";
+
+// LoginViewController Don't Have Account Label Title
+"LoginViewDontHaveAccountLabelTitle" = "Don't have an account?";
+
+// LoginViewController Forgot Password Button Title
+"LoginViewForgotPasswordButtonTitle" = "Forgot username or password?";
+
+// LoginViewController Sign Up Button Title
+"LoginViewSignUpButtonTitle" = "Sign Up";
+
+// LoginViewController Error Message Title 1
+"LoginViewErrorMessageUsernameTooShort" = "Username must be at least 3 characters long";
+
+// LoginViewController Error Message Title 2
+"LoginViewErrorMessageUsernameRequirement" = "Username is a required field";
+
+// LoginViewController Error Message Title 3
+"LoginViewErrorMessagePasswordRequirement" = "Password is a required field";
+
+// LoginViewController Error Message Title 4
+"LoginViewErrorMessagePasswordLength" = "Password must be at least 8 characters long";
+
+// ForgotPasswordViewController Back Button Title
+"ForgotPasswordViewBackButtonTitle" = "Back";
+
+// ForgotPasswordViewController Enter Info Title
+"ForgotPasswordViewEnterInfoLabel" = "Forgot your username or password? Enter your info and I will send you a magic link to log in:";
+
+// ForgotPasswordViewController Username Text Field Placeholder Title
+"ForgotPasswordViewUsernameTextFieldPlaceholder" = "Enter your @username or email";
+
+// ForgotPasswordViewController Send Link Button Title
+"ForgotPasswordViewSendLinkButtonTitle" = "Send magic link";
+
+// SentEmailViewController Sent Email Button Title
+"SentEmailViewSentLinkLabelTitle" = "I sent a Magic Link to:";
+
+// SentEmailViewController Expire Label Title
+"SentEmailViewExpireLabelTitle" = "The link expires in 2 hours, so be sure to use \n it soon.";
+
+// SentEmailViewController Open Email Label Title
+"SentEmailViewOpenEmailLabel" = "Open your email";
+
+// SentEmailViewController Deley Time Label Title
+"SentEmailViewDeleyTimeLabel" = "Didn’t get a link? It may take 2-5 min. Or try  resending the magic link:";
+
+// SentEmailViewController Resend Email Label Title
+"SentEmailViewResendEmailLabel" = "Resend magic link";
+
+// SentEmailViewController Back To Button Title
+"SentEmailViewBackToButtonTitle" = "Back to login";
+
+// SettingsViewController Title Label
+"SettingsViewTitleLabel" = "Settings";
+
+// SettingsViewController User Name Label Title
+"SettingsViewUserNameLabel" = "@diegoezbus";
+
+// SettingsViewController Change Password Label Title
+"SettingsViewChangePasswordLabel" = "Change Password";
+
+// SettingsViewController Password Label Title
+"SettingsViewPasswordLabel" = "****************";
+
+// SettingsViewController Receive Notifications Label Title
+"SettingsViewReceiveNotificationsLabel" = "Auto respond to Requests";
+
+// SettingsViewController Sign Out Label Title
+"SettingsViewSignOutLabelTitle" = "SIGN OUT OF JUNE";
+
+// SettingsViewController New Password Text Field Placeholder Title
+"SettingsViewNewPasswordTextFieldTitle" = "RE-ENTER NEW PASSWORD";
+
+// SettingsViewController Enter new Password Text Field Placeholder Title
+"SettingsViewChangePasswordFieldPlaceholderTitle" = "ENTER NEW PASSWORD";
+
+// SettingsViewController Original PasswordField Placeholder Title
+"SettingsViewOriginalPasswordPlaceholderTitle" = "ENTER ORIGINAL PASSWORD";
+
+// SettingsViewController Save Changes Button Title
+"SettingsViewSaveChangesButtonTitle" = "SAVE CHANGES";
+
+// SettingsViewController Settings For Feed title
+"SettingsViewSettingsForFeedTitle" = "Settings for Feed";
+
+// SettingsViewController Bottom Edit Button Title
+"SettingsViewBottomEditButtonTitle" = "Edit";
+
+// SettingsViewController Edit Accounts label Title
+"SettingsViewEditAccountsTitle" = "Edit Accounts";
+
+// SettingsViewController Edit Button Title
+"SettingsViewEditButtonTitle" = "Edit";
+
+// SettingsViewController Edit Full Name Button Title
+"SettingsViewEditNameButtonTitle" = "Edit";
+
+// SettingsViewController Add Account Button Title
+"SettingsViewAddAccountButtonTitle" = "Add Account";
+
+// SettingsViewController Edit Button Done Title
+"SettingsViewEditButtonDoneTitle" = "Done";
+
+// SettingsViewController Error Alert Old Password Requirement Title
+"SettingsViewErrorAlertOldPasswordRequirement" = "Old password is required.";
+
+// SettingsViewController Error Alert New Password Requirement Title
+"SettingsViewErrorAlertNewPasswordRequirement" = "New password is required.";
+
+// SettingsViewController Error Alert Re-enter New Password Title
+"SettingsViewErrorAlertReenterNewPassword" = "Re-enter new password is required.";
+
+// SettingsViewController Error Alert New Password Must Match Title
+"SettingsViewErrorAlertNewPasswordMatch" = "New password must match";
+
+// SettingsViewController Error Alert New Password Can Not Be Same Title
+"SettingsViewErrorAlertNewPasswordCannotMatchOldOne" = "New password cannot be the same as old password";
+
+// SettingsViewController Error Alert Wrong Old Password Title
+"SettingsViewErrorAlertwrongOldPassword" = "Wrong old Password";
+
+// SettingsViewController Error Alert Minimum 8 Characters Required Title
+"SettingsViewErrorAlert8CharacterRequired" = "Password must be at least 8 characters long";
+
+// SettingsViewController Error Alert Password Should Have Letters And Numbers Title
+"SettingsViewErrorAlertNumbersCharacterRequirement" = "Password should have letters and numbers";
+
+// SettingsViewController Error Alert Make Sure Password Is Correct Title
+"SettingsViewErrorAlertCheckPassword" = "Please make sure your current password is correct.";
+
+// SettingsViewController Success Alert Password Title
+"SettingsViewSuccessAlertPasswordChanged" = "Password changed! Use this the next time you sign in";
+
+// SettingsViewController Error Alert Something Went Wrong Title
+"SettingsViewErrorAlertSomethingWrong" = "Uh Oh. Something went wrong.";
+
+// AddAccountViewController Title Label
+"AddAccountViewTitleLabel" = "Add Account";
+
+// AddAccountViewController Alert Password Title
+"AddAccountViewAlertPasswordTitle" = "Password";
+
+// AddAccountViewController Alert Password Message Title
+"AddAccountViewAlertPasswordMessageTitle" = "Please enter password to continue";
+
+// AddAccountViewController Aler Action Continue Title
+"AddAccountViewAlertActionContinueTitle" = "Continue";
+
+// AddAccountViewController Aler Action Cancel Title
+"AddAccountViewAlertActionCancelTitle" = "Cancel";
+
+// AddAccountViewController Aler Textfield Placeholder Title
+"AddAccountViewAlertTextFieldPlaceholderTitle" = "Enter your password";
+
+// AddAccountAlertViewController Title Label
+"AddAccountAlertViewTitleLabel" = "Link Another Email Account";
+
+// AddAccountAlertViewController Email Address Textfiewld Placeholder Title
+"AddAccountAlertViewEmailPlaceholderTitle" = "Enter Email Address";
+
+// AddAccountAlertViewController Add Account Label Title
+"AddAccountAlertViewErrorAlertTitle" = "Couldn’t add account";
+
+// AddAccountAlertViewController Error Alert Title
+"AddAccountAlertViewErrorLabelTitle" = "Please enter a valid email.";
+
+// AddAccountAlertViewController Success Alert Title
+"AddAccountAlertViewSuccessLabelTitle" = "Account successfully connected";
+
+// AccountsViewController View All Label Ttle
+"AccountsViewViewAllLabel" = "View all";
+
+// AccountsViewController Email Accounts Label Title
+"AccountsViewEmailAccountsLabelTitle" = "Accounts";
+
+// AccountsViewController Edit Label Title
+"AccountsViewEditLabelTitle" = "Edit";
+
+// AccountsViewController Settings Label Title
+"AccountsViewSettingsButtonTitle" = "Settings";
+
+// AccountsViewController Spam BUtton Title
+"AccountsViewSpamButtonTitle" = "Spam";
+
+// AccountsViewController Trash BUtton Title
+"AccountsViewTrashButtonTitle" = "Trash";
+
+// AccountsViewController Help Button Title
+"AccountsViewHelpButtonTitle" = "Help";
+
+// AccountsViewController / AccountsUIInitializer Add Account Button Title
+"AccountsViewAddAccountButtonTitle" = "ADD ACCOUNT";
+
+// AccountsViewController Spam Button Title
+"AccountsViewSpamButtonTitle" = "Spam";
+
+// StarredViewController / StarredHeader Messages Button Title
+"StarredViewMessageButtonTitle" = "Messages";
+
+// StarredViewController / StarredHeaderView Feed Button Title
+"StarredViewFeedButtonTitle" = "Feed";
+
+// ThreadsViewController New Conversations Button Title
+"ThreadsViewNewConversationsButtonTitle" = "New Conversations";
+
+// ThreadsViewController Conversations Button title
+"ThreadsViewConversationsButtonTitle" = "Conversations";
+
+// ThreadsViewController NO New Message Label Title
+"ThreadsViewNoNewMessageLabelTitle" = "No new messages";
+
+// ThreadsDetailViewController Move To Action Sheet Title
+"ThreadsDetailViewActionSheetTitle" = "Move To";
+
+// ThreadsDetailViewController Move To Action Sheet Conversations Button Title
+"ThreadsDetailViewActionSheetConversationsTitle" = "Conversations";
+
+// ThreadsDetailViewController Move To Action Sheet Promotions Button Title
+"ThreadsDetailViewActionSheetPromotionsTitle" = "Promotions";
+
+// ThreadsDetailViewController Move To Action Sheet Notifications Button Title
+"ThreadsDetailViewActionSheetNotificationsTitle" = "Notifications";
+
+// ThreadsDetailViewController Move To Action Sheet Trips Button Title
+"ThreadsDetailViewActionSheetTripsTitle" = "Trips";
+
+// ThreadsDetailViewController Move To Action Sheet Purchases Button Title
+"ThreadsDetailViewActionSheetPurchasesTitle" = "Purchases";
+
+// ThreadsDetailViewController Move To Action Sheet Finance Button Title
+"ThreadsDetailViewActionSheetFinanceTitle" = "Finance";
+
+// ThreadsDetailViewController Move To Action Sheet Social Button Title
+"ThreadsDetailViewActionSheetSocialTitle" = "Social";
+
+// ThreadsDetailViewController Move To Action Sheet News Button Title
+"ThreadsDetailViewActionSheetNewsTitle" = "News";
+
+// GenericEmailViewController Back Button Title
+"GenericEmailViewBackButtonTitle" = "Back";
+
+// GenericEmailViewController Enter Password Label Title
+"GenericEmailViewEnterPasswordLabelTitle" = "Enter the password for your email account:";
+
+// GenericEmailViewController Password Info Field Placeholder Title
+"GenericEmailViewPasswordInfoPlaceholderTitle" = "Enter your password";
+
+// GenericEmailViewController Next Button Title
+"GenericEmailViewNextButtonTitle" = "Next";
+
+// SignUpViewController SignUp Label Title
+"SignUpViewSignUpLabelTitle" = "Sign Up";
+
+// SignUpViewController I'm June Label Title
+"SignUpViewIamJuneLabelTitle" = "Hey there, I'm June.";
+
+// SignUpViewController Username Field Plcaeholder Title
+"SignUpViewUsernameFieldPlaceholder" = "Create your username";
+
+// SignUpViewController Password Field Placeholder Title
+"SignUpViewPasswordFieldPlaceholder" = "Create your password";
+
+// SignUpViewController Have An Account Label Title
+"SignUpViewHaveAnAccountLabelTitle" = "Already have an account?";
+
+// SignUpViewController SignUp Button Title
+"SignUpViewSignUpButtonTitle" = "Sign Up";
+
+// SignUpViewController Login Button Title
+"SignUpViewLogInButtonTitle" = "Log in";
+
+// SignUpViewController Alert Message 1
+"SignUpViewErrorAertUsernameTooShort" = "Username must be at least 3 characters long";
+
+// SignUpViewController Alert Message 2
+"SignUpViewErrorAlertUsernameRequirement" = "Username is a required field";
+
+// SignUpViewController Alert Message 3
+"SignUpViewErrorAlertPasswordRequirement" = "Password is a required field";
+
+// SignUpViewController Alert Message 4
+"SignUpViewErrorAlertPasswordLength" = "Password must be at least 8 characters long";
+
+// SignUpViewController Alert Message 5
+"SignUpViewErrorAlertPasswordLettersNumbersRequirement" = "Password should have letters and numbers";
+
+// EmailDiscoveryViewController Back Button Title
+"EmailDiscoveryViewBackButtonTitle" = "Back";
+
+// EmailDiscoveryViewController Link Label Title
+"EmailDiscoveryViewLinkLabelTitle" = "Link your email account";
+
+// EmailDiscoveryViewController Email Info Title
+"EmailDiscoveryViewEmailInfoTitle" = "Enter your email address";
+
+// EmailDiscoveryViewController Next Button Title
+"EmailDiscoveryViewNextButtonTitle" = "Next";
+
+// EmailDiscoveryViewController Error Aler 1
+"EmailDiscoveryViewErrorAlertEmailRequirement" = "Email is a required field";
+
+// EmailDiscoveryViewController Error Aler 2
+"EmailDiscoveryViewErrorAlertEnterValidEmail" = "Enter a vaild email";
+
+// HomeViewController Tab One Title
+"HomeViewTabOneTitle" = "Convos";
+
+// HomeViewController Tab Two title
+"HomeViewTabTwoTitle" = "Feed";
+
+// HomeViewController Tab Four title
+"HomeViewTabFourTitle" = "Favorites";
+
+// HomeViewController Tab Four title
+"HomeViewTabFiveTitle" = "Requests";
+
+// ConvosViewController To Do Title
+"ConvosToDoTitle" = "To Do";
+
+// ConvosViewController No New Items Title
+"ConvosNoNewItemsTitle" = "Nothing New";
+
+// ConvosViewController No New or Seen Items Title
+"ConvosNoNewOrSeenItemsTitle" = "You’ve completed your list!";
+
+// ConvosViewController To Do Header
+"ConvosNewHeader" = "New";
+
+// ConvosViewController View All Button Title
+"ConvosViewAllButtonTitle" = "View All";
+
+// ConvosViewController Collapse Button Title
+"ConvosCollapseButtonTitle" = "Collapse";
+
+// ConvosViewController Cleared Header
+"ConvosSeenHeader" = "Seen";
+
+// ConvosViewController Cleared Title
+"ConvosClearedTitle" = "Cleared";
+
+// ConvosViewController Loader Title
+"ConvosLoaderTitle" = "Loading...";
+
+// ConvosViewController Separator Title
+"ConvosSeparatorTitle" = ", ";
+
+// FavoritesViewController Coming Soon Label Title
+"FavoritesViewComingSoonLabelTotle" = "Coming Soon";
+
+// SettingsForFeedEditAction Settings For Feed Title
+"SettingsForFeedTitle" = "Settings for Feed";
+
+// SettingsForFeedEditAction Description Label Title
+"SettingsViewEditPopupDescriptionTitle" = "Choose which sections you want to see in your Daily Brief and I will organize it for you in your Feed.";
+
+// SettingsForFeedEditAction Categories Label Title
+"SettingsViewEditPopupCategoriesTitle" = "Feed Categories";
+
+// SettingsForFeedEditAction Batch Label Title
+"SettingsViewEditPopupBatchTitle" = "Batch";
+
+// SettingsForFeedEditAction News Label Title
+"SettingsViewEditPopupNewsTitle" = "News";
+
+// SettingsForFeedEditAction Promos Label Title
+"SettingsViewEditPopupPromosTitle" = "Promos";
+
+// SettingsForFeedEditAction Social Label Title
+"SettingsViewEditPopupSocialTitle" = "Social";
+
+// SettingsForFeedEditAction Trips Label Title
+"SettingsViewEditPopupTripsTitle" = "Trips";
+
+// SettingsForFeedEditAction Purchases Label Title
+"SettingsViewEditPopupPurchasesTitle" = "Purchases";
+
+// SettingsForFeedEditAction Finance Label Title
+"SettingsViewEditPopupFinanceTitle" = "Finance";
+
+// SettingsInfoAlertsUIAction Auto Respond To Requests Label
+"SettingsViewInfoAlertAutoRespondTitle" = "Auto Respond to Requests";
+
+// SettingsInfoAlertsUIAction Settings For Feed Label Title
+"SettingsViewInfoAlertTitle" = "Settings for Feed";
+
+// SettingsInfoAlertsUIAction description Label Title
+"SettingsViewInfoAlertDescriptionLabelTitle" = "Choose which sections you want to see in your Daily Brief and I will organize it for you in your Feed.";
+
+// SettingsInfoAlertsUIAction Mini Popup Title Label
+"SettingsViewEditPopupMiniPopupTitle" = "Settings for Feed";
+
+// SettingsInfoAlertsUIAction Mini Popup Description For News Info 
+"SettingsViewEditPopupDescriptionForNewsInfo" = "Includes messages about current events.";
+
+// SettingsInfoAlertsUIAction Mini Popup Description For Promos Info
+"SettingsViewEditPopupDescriptionForPromosInfo" = "Includes messages about deals and offers.";
+
+// SettingsInfoAlertsUIAction Mini Popup Description For Social Info
+"SettingsViewEditPopupDescriptionForSocialInfo" = "Includes messages about your social media accounts.";
+
+// SettingsInfoAlertsUIAction Mini Popup Description For Trips Info
+"SettingsViewEditPopupDescriptionForTripsInfo" = "Includes messages about your planned or booked trips.";
+
+// SettingsInfoAlertsUIAction Mini Popup Description For Purchases Info
+"SettingsViewEditPopupDescriptionForPurchasesInfo" = "Includes messages about to things you have bought.";
+
+// SettingsInfoAlertsUIAction Mini Popup Description For Finance Info
+"SettingsViewEditPopupDescriptionForFinanceInfo" = "Includes messages about to your bank or credit cards.";
+
+// FullEmailViewController Top Navigation Bar Title label
+"fullEmailViewTopFullEmailTitle" = "Full Email";
+
+/* NavBar Title */
+"NavBarClose" = "Close";
+
+/* NavBar Title */
+"NavBarCancel" = "Cancel";
+
+/* NavBar Title */
+"NavBarSend" = "Send";
+
+/* NavBar Title */
+"NavBarEdit" = "Edit";
+
+/* NavBar Title */
+"NavBarDone" = "Done";
+
+/* NavBar Title */
+"NavBarNext" = "Next";
+
+/* NavBar Title */
+"NavBarLoad" = "Load";
+
+/* NavBar Title */
+"NavBarSave" = "Save";
+
+/* NavBar Title */
+"NavBarAdd" = "Add";
+
+/* NavBar Title */
+"NavBarDelete" = "Delete";
+
+/* NavBar Title */
+"NavBarClaim" = "Claim";
+
+// RolodexsViewController Separator Title
+"RolodexsSeparatorTitle" = ", ";
+
+// RolodexsViewController Loader Title
+"RolodexsLoaderTitle" = "Loading...";
+
+/* Romio Alert View Yes Button Title */
+"RomioAlertViewYesButtonTitle" = "YES";
+
+/* Romio Alert View No Button Title */
+"RomioAlertViewNoButtonTitle" = "NO";
+
+/* Romio Alert View OK Button Title */
+"RomioAlertViewOKButtonTitle" = "OK";
+
+/* Romio Alert View Apply Total Button Title */
+"RomioAlertViewApplyTotalButtonTitle" = "APPLY TOTAL";
+
+/* Romio Alert View Add Custom Total Message */
+"RomioAlertViewAddCustomTotalMessage" = "Add Custom Total";
+
+/* Romio Alert View Add Custom Total Message */
+"RomioAlertViewSetFullCostMessage" = "Set the full cost of the service.";

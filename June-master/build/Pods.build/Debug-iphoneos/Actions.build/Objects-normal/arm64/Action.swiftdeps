@@ -1,0 +1,199 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Action"
+- "VoidAction"
+- "ParametizedAction"
+- "Actionable"
+- "retainAction"
+- "releaseAction"
+provides-nominal:
+- "7Actions6ActionP"
+- "7Actions10VoidActionC"
+- "7Actions17ParametizedActionC"
+- "7Actions10ActionableP"
+- "So8NSObjectC"
+provides-member:
+- ["7Actions6ActionP", ""]
+- ["7Actions10VoidActionC", ""]
+- ["7Actions17ParametizedActionC", ""]
+- ["7Actions10ActionableP", ""]
+- ["So8NSObjectC", ""]
+- ["7Actions10ActionableP", "actions"]
+provides-dynamic-lookup:
+- "key"
+- "perform"
+- "selector"
+depends-top-level:
+- !private "=="
+- "Action"
+- "Actionable"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "Dictionary"
+- "NSObject"
+- "ParametizedAction"
+- "ProcessInfo"
+- "Selector"
+- "String"
+- "UInt8"
+- "Void"
+- "VoidAction"
+- !private "actionsKey"
+- !private "objc_getAssociatedObject"
+- !private "objc_setAssociatedObject"
+- "releaseAction"
+- "retainAction"
+depends-member:
+- ["7Actions6ActionP", "ProcessInfo"]
+- ["7Actions6ActionP", "Selector"]
+- ["7Actions6ActionP", "String"]
+- !private ["7Actions6ActionP", "action"]
+- ["7Actions6ActionP", "key"]
+- ["7Actions6ActionP", "perform"]
+- ["7Actions6ActionP", "selector"]
+- ["7Actions6ActionP", ""]
+- ["7Actions10ActionableP", "Action"]
+- ["7Actions10ActionableP", "String"]
+- ["7Actions10ActionableP", "actions"]
+- !private ["7Actions10ActionableP", "actionsKey"]
+- ["7Actions10ActionableP", "globallyUniqueString"]
+- !private ["7Actions10ActionableP", "objc_getAssociatedObject"]
+- !private ["7Actions10ActionableP", "objc_setAssociatedObject"]
+- ["7Actions10ActionableP", "processInfo"]
+- ["7Actions10ActionableP", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "actions"]
+- ["s7CVarArgP", "globallyUniqueString"]
+- ["s7CVarArgP", "processInfo"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s10CollectionP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", "actions"]
+- ["s28CustomDebugStringConvertibleP", "globallyUniqueString"]
+- ["s28CustomDebugStringConvertibleP", "processInfo"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "actions"]
+- ["s23CustomStringConvertibleP", "globallyUniqueString"]
+- ["s23CustomStringConvertibleP", "processInfo"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "OBJC_ASSOCIATION_RETAIN"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "actions"]
+- ["s9EquatableP", "globallyUniqueString"]
+- ["s9EquatableP", "processInfo"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s8HashableP", "OBJC_ASSOCIATION_RETAIN"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "actions"]
+- ["s8HashableP", "globallyUniqueString"]
+- ["s8HashableP", "processInfo"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["So8NSObjectC", "actions"]
+- ["So8NSObjectC", "deinit"]
+- ["So8NSObjectC", "globallyUniqueString"]
+- ["So8NSObjectC", "processInfo"]
+- ["So16NSObjectProtocolP", "actions"]
+- ["So16NSObjectProtocolP", "globallyUniqueString"]
+- ["So16NSObjectProtocolP", "processInfo"]
+- ["7Actions17ParametizedActionC", "AnyObject"]
+- ["7Actions17ParametizedActionC", "ProcessInfo"]
+- ["7Actions17ParametizedActionC", "Selector"]
+- ["7Actions17ParametizedActionC", "T"]
+- ["7Actions17ParametizedActionC", "Void"]
+- ["7Actions17ParametizedActionC", "action"]
+- ["7Actions17ParametizedActionC", "deinit"]
+- ["7Actions17ParametizedActionC", "init"]
+- ["7Actions17ParametizedActionC", "key"]
+- ["7Actions17ParametizedActionC", "perform"]
+- ["7Actions17ParametizedActionC", "selector"]
+- ["So11ProcessInfoC", "globallyUniqueString"]
+- ["So11ProcessInfoC", "processInfo"]
+- !private ["s16RawRepresentableP", "OBJC_ASSOCIATION_RETAIN"]
+- !private ["s8SequenceP", "subscript"]
+- ["7Actions10VoidActionC", "ProcessInfo"]
+- ["7Actions10VoidActionC", "Selector"]
+- ["7Actions10VoidActionC", "Void"]
+- ["7Actions10VoidActionC", "action"]
+- ["7Actions10VoidActionC", "deinit"]
+- ["7Actions10VoidActionC", "init"]
+- ["7Actions10VoidActionC", "key"]
+- ["7Actions10VoidActionC", "perform"]
+- ["7Actions10VoidActionC", "selector"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "actions"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "globallyUniqueString"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "processInfo"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["SC22objc_AssociationPolicyO", "OBJC_ASSOCIATION_RETAIN"]
+depends-nominal:
+- "7Actions6ActionP"
+- "7Actions10ActionableP"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s10DictionaryV"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "7Actions17ParametizedActionC"
+- "So11ProcessInfoC"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- "7Actions10VoidActionC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "SC22objc_AssociationPolicyO"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/ostap_holub/Projects/June/Pods/Target Support Files/Actions/Actions-umbrella.h"
+- "/Users/ostap_holub/Projects/June/build/Pods.build/Debug-iphoneos/Actions.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "0b1794d58646fcf185dc36559a97fa8c"

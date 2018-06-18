@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cards" representedClassName="Cards" syncable="YES" codeGenerationType="class">
+        <attribute name="bill_due_date" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="bill_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bill_total" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="from" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="items" optional="YES" attributeType="Transformable" customClassName="NSArray" syncable="YES"/>
+        <attribute name="message_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_total" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payment_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qwant_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="refund_total" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="template" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thread_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="to" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tracking_numbers" optional="YES" attributeType="Transformable" customClassName="NSArray" syncable="YES"/>
+        <attribute name="transaction_amount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transaction_date" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="threads" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Threads" inverseName="cards" inverseEntity="Threads" syncable="YES"/>
+        <relationship name="vendor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vendor" inverseName="cards" inverseEntity="Vendor" syncable="YES"/>
+    </entity>
+    <entity name="Contacts" representedClassName="Contacts" syncable="YES" codeGenerationType="class">
+        <attribute name="account_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inbox" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_category_ids" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="last_message_date" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_snippet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_thread_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_unread" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="list_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updated_at" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Drafts" representedClassName="Drafts" syncable="YES" codeGenerationType="class">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thread_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages_bcc" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Bcc" inverseName="drafts" inverseEntity="Messages_Bcc" syncable="YES"/>
+        <relationship name="messages_cc" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Cc" inverseName="drafts" inverseEntity="Messages_Cc" syncable="YES"/>
+        <relationship name="messages_files" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Files" inverseName="drafts" inverseEntity="Messages_Files" syncable="YES"/>
+        <relationship name="messages_from" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_From" inverseName="drafts" inverseEntity="Messages_From" syncable="YES"/>
+        <relationship name="messages_to" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_To" inverseName="drafts" inverseEntity="Messages_To" syncable="YES"/>
+    </entity>
+    <entity name="Favorites" representedClassName="Favorites" syncable="YES" codeGenerationType="class">
+        <attribute name="created_at" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="favorites_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favorites_underscore_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rolodex_ids" optional="YES" attributeType="Transformable" customClassName="NSArray" syncable="YES"/>
+        <attribute name="starred" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="starred_message_count" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="starred_spool_count" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unread" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unread_message_count" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unread_spool_count" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="updated_at" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="favorites_participants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Favorites_Participants" inverseName="favorites" inverseEntity="Favorites_Participants" syncable="YES"/>
+    </entity>
+    <entity name="Favorites_Participants" representedClassName="Favorites_Participants" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="favorites" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Favorites" inverseName="favorites_participants" inverseEntity="Favorites" syncable="YES"/>
+    </entity>
+    <entity name="LastMessageFrom" representedClassName="LastMessageFrom" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="threads" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Threads" inverseName="last_message_from" inverseEntity="Threads" syncable="YES"/>
+    </entity>
+    <entity name="LastMessageTo" representedClassName="LastMessageTo" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="threads" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Threads" inverseName="last_message_to" inverseEntity="Threads" syncable="YES"/>
+    </entity>
+    <entity name="Messages" representedClassName="Messages" syncable="YES" codeGenerationType="class">
+        <attribute name="account_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="all" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="archived" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category_ids" optional="YES" attributeType="Transformable" customClassName="NSArray" syncable="YES"/>
+        <attribute name="character_count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="data_sha256" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="drafts" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="emotion_score" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="important" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inbox" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="is_in_path" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_from_contact_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messages_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="obm_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="participants_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rolodex_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rolodex_subject_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sent" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="share_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharing_message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharing_message_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snippet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spam" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="spool_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="starred" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thread_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trash" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unread" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="word_count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="messages_bcc" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Bcc" inverseName="messages" inverseEntity="Messages_Bcc" syncable="YES"/>
+        <relationship name="messages_cc" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Cc" inverseName="messages" inverseEntity="Messages_Cc" syncable="YES"/>
+        <relationship name="messages_events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Events" inverseName="messages" inverseEntity="Messages_Events" syncable="YES"/>
+        <relationship name="messages_files" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Files" inverseName="messages" inverseEntity="Messages_Files" syncable="YES"/>
+        <relationship name="messages_forwarded_from" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Forwarded_From" inverseName="messages" inverseEntity="Messages_Forwarded_From" syncable="YES"/>
+        <relationship name="messages_forwarded_to" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Forwarded_To" inverseName="messages" inverseEntity="Messages_Forwarded_To" syncable="YES"/>
+        <relationship name="messages_from" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_From" inverseName="messages" inverseEntity="Messages_From" syncable="YES"/>
+        <relationship name="messages_recipients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Recipients" inverseName="messages" inverseEntity="Messages_Recipients" syncable="YES"/>
+        <relationship name="messages_reply_to" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Reply_To" inverseName="messages" inverseEntity="Messages_Reply_To" syncable="YES"/>
+        <relationship name="messages_segmented_html" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Segmented_Html" inverseName="messages" inverseEntity="Messages_Segmented_Html" syncable="YES"/>
+        <relationship name="messages_segmented_pro" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Segmented_Pro" inverseName="messages" inverseEntity="Messages_Segmented_Pro" syncable="YES"/>
+        <relationship name="messages_to" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_To" inverseName="messages" inverseEntity="Messages_To" syncable="YES"/>
+        <relationship name="messages_unsubscribe_links" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Unsubscribe_Links" inverseName="messages" inverseEntity="Messages_Unsubscribe_Links" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Bcc" representedClassName="Messages_Bcc" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="drafts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drafts" inverseName="messages_bcc" inverseEntity="Drafts" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_bcc" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Cc" representedClassName="Messages_Cc" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="drafts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drafts" inverseName="messages_cc" inverseEntity="Drafts" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_cc" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Events" representedClassName="Messages_Events" syncable="YES" codeGenerationType="class">
+        <attribute name="account_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="busy" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="calendar_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="events_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="events_location" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="read_only" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_events" inverseEntity="Messages" syncable="YES"/>
+        <relationship name="messages_events_participants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Events_Participants" inverseName="messages_events" inverseEntity="Messages_Events_Participants" syncable="YES"/>
+        <relationship name="messages_events_when" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Messages_Events_When" inverseName="messages_events" inverseEntity="Messages_Events_When" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Events_Participants" representedClassName="Messages_Events_Participants" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages_events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages_Events" inverseName="messages_events_participants" inverseEntity="Messages_Events" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Events_When" representedClassName="Messages_Events_When" syncable="YES" codeGenerationType="class">
+        <attribute name="end_time" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start_time" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="messages_events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages_Events" inverseName="messages_events_when" inverseEntity="Messages_Events" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Files" representedClassName="Messages_Files" syncable="YES" codeGenerationType="class">
+        <attribute name="content_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="content_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="drafts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drafts" inverseName="messages_files" inverseEntity="Drafts" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_files" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Forwarded_From" representedClassName="Messages_Forwarded_From" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_forwarded_from" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Forwarded_To" representedClassName="Messages_Forwarded_To" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_forwarded_to" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_From" representedClassName="Messages_From" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="drafts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drafts" inverseName="messages_from" inverseEntity="Drafts" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_from" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Recipients" representedClassName="Messages_Recipients" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_recipients" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Reply_To" representedClassName="Messages_Reply_To" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_reply_to" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Segmented_Html" representedClassName="Messages_Segmented_Html" syncable="YES" codeGenerationType="class">
+        <attribute name="html" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="html_markdown" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_segmented_html" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Segmented_Pro" representedClassName="Messages_Segmented_Pro" syncable="YES" codeGenerationType="class">
+        <attribute name="html" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_segmented_pro" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_To" representedClassName="Messages_To" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="drafts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drafts" inverseName="messages_to" inverseEntity="Drafts" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_to" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Messages_Unsubscribe_Links" representedClassName="Messages_Unsubscribe_Links" syncable="YES" codeGenerationType="class">
+        <attribute name="body_unsub_link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="header_mailto_addr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="header_unsub_link" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="messages_unsubscribe_links" inverseEntity="Messages" syncable="YES"/>
+    </entity>
+    <entity name="Participants" representedClassName="Participants" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="threads" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Threads" inverseName="participants" inverseEntity="Threads" syncable="YES"/>
+    </entity>
+    <entity name="Rolodexs" representedClassName="Rolodexs" syncable="YES" codeGenerationType="class">
+        <attribute name="all" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="approved" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="archived" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="drafts" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="important" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inbox" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_account_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_data_sha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_date" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_obm_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_snippet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_starred" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_unread" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_messages_spool_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_messages_thread_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="participants_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rolodex_subject_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rolodex_subject_snippet_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rolodexs_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rolodexs_underscore_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sent" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="spam" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="starred" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="starred_spool_count" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="template" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trash" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unread" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unread_spool_count" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="rolodexs_labels" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rolodexs_Labels" inverseName="rolodexs" inverseEntity="Rolodexs_Labels" syncable="YES"/>
+        <relationship name="rolodexs_last_message_events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rolodexs_Last_Message_Events" inverseName="rolodexs" inverseEntity="Rolodexs_Last_Message_Events" syncable="YES"/>
+        <relationship name="rolodexs_last_message_from" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rolodexs_Last_Message_From" inverseName="rolodexs" inverseEntity="Rolodexs_Last_Message_From" syncable="YES"/>
+        <relationship name="rolodexs_named_participants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rolodexs_Named_Participants" inverseName="rolodexs" inverseEntity="Rolodexs_Named_Participants" syncable="YES"/>
+        <relationship name="rolodexs_participants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rolodexs_Participants" inverseName="rolodexs" inverseEntity="Rolodexs_Participants" syncable="YES"/>
+    </entity>
+    <entity name="Rolodexs_Labels" representedClassName="Rolodexs_Labels" syncable="YES" codeGenerationType="class">
+        <attribute name="display_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="labels_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rolodexs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rolodexs" inverseName="rolodexs_labels" inverseEntity="Rolodexs" syncable="YES"/>
+    </entity>
+    <entity name="Rolodexs_Last_Message_Events" representedClassName="Rolodexs_Last_Message_Events" syncable="YES" codeGenerationType="class">
+        <attribute name="account_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="busy" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="calendar_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="events_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="events_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="events_location" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="events_object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="events_read_only" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="events_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="events_title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rolodexs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rolodexs" inverseName="rolodexs_last_message_events" inverseEntity="Rolodexs" syncable="YES"/>
+    </entity>
+    <entity name="Rolodexs_Last_Message_From" representedClassName="Rolodexs_Last_Message_From" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rolodexs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rolodexs" inverseName="rolodexs_last_message_from" inverseEntity="Rolodexs" syncable="YES"/>
+    </entity>
+    <entity name="Rolodexs_Named_Participants" representedClassName="Rolodexs_Named_Participants" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rolodexs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rolodexs" inverseName="rolodexs_named_participants" inverseEntity="Rolodexs" syncable="YES"/>
+    </entity>
+    <entity name="Rolodexs_Participants" representedClassName="Rolodexs_Participants" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rolodexs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rolodexs" inverseName="rolodexs_participants" inverseEntity="Rolodexs" syncable="YES"/>
+    </entity>
+    <entity name="Spools" representedClassName="Spools" syncable="YES" codeGenerationType="class">
+        <attribute name="all" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="archived" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="drafts" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inbox" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_account_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_data_sha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_date" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_obm_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_snippet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_message_unread" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_messages_participants_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_messages_rolodex_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_messages_rolodex_subject_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_messages_rolodex_subject_snippet_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_messages_thread_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spam" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="spools_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spools_underscore_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="starred" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="starred_message_count" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trash" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unread" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unread_message_count" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="spools_last_message_from" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Spools_Last_Message_From" inverseName="spools" inverseEntity="Spools_Last_Message_From" syncable="YES"/>
+        <relationship name="spools_named_participants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spools_Named_Participants" inverseName="spools" inverseEntity="Spools_Named_Participants" syncable="YES"/>
+        <relationship name="spools_participants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spools_Participants" inverseName="spools" inverseEntity="Spools_Participants" syncable="YES"/>
+    </entity>
+    <entity name="Spools_Last_Message_From" representedClassName="Spools_Last_Message_From" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="spools" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Spools" inverseName="spools_last_message_from" inverseEntity="Spools" syncable="YES"/>
+    </entity>
+    <entity name="Spools_Named_Participants" representedClassName="Spools_Named_Participants" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="spools" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Spools" inverseName="spools_named_participants" inverseEntity="Spools" syncable="YES"/>
+    </entity>
+    <entity name="Spools_Participants" representedClassName="Spools_Participants" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="spools" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Spools" inverseName="spools_participants" inverseEntity="Spools" syncable="YES"/>
+    </entity>
+    <entity name="Threads" representedClassName="Threads" syncable="YES" codeGenerationType="class">
+        <attribute name="account_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="all" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="approved" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="archived" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="block_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="broadcasted_at" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category_ids" optional="YES" attributeType="Transformable" customClassName="NSArray" syncable="YES"/>
+        <attribute name="first_message_timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="has_attachments" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="important" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inbox" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_received_timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_sent_timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_message_timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="message_ids" optional="YES" attributeType="Transformable" customClassName="NSArray" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seen" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sent" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="snippet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spam" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="starred" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thread_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trash" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unread" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="cards" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cards" inverseName="threads" inverseEntity="Cards" syncable="YES"/>
+        <relationship name="last_message_from" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LastMessageFrom" inverseName="threads" inverseEntity="LastMessageFrom" syncable="YES"/>
+        <relationship name="last_message_to" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LastMessageTo" inverseName="threads" inverseEntity="LastMessageTo" syncable="YES"/>
+        <relationship name="participants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Participants" inverseName="threads" inverseEntity="Participants" syncable="YES"/>
+        <relationship name="threads_avatar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Threads_Avatar" inverseName="threads" inverseEntity="Threads_Avatar" syncable="YES"/>
+        <relationship name="threads_named_participants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Threads_Named_Participants" inverseName="threads" inverseEntity="Threads_Named_Participants" syncable="YES"/>
+        <relationship name="threadsEvents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ThreadsEvents" inverseName="threads" inverseEntity="ThreadsEvents" syncable="YES"/>
+    </entity>
+    <entity name="Threads_Avatar" representedClassName="Threads_Avatar" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="threads" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Threads" inverseName="threads_avatar" inverseEntity="Threads" syncable="YES"/>
+    </entity>
+    <entity name="Threads_Named_Participants" representedClassName="Threads_Named_Participants" syncable="YES" codeGenerationType="class">
+        <attribute name="bold" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="threads" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Threads" inverseName="threads_named_participants" inverseEntity="Threads" syncable="YES"/>
+    </entity>
+    <entity name="ThreadsEvents" representedClassName="ThreadsEvents" syncable="YES" codeGenerationType="class">
+        <attribute name="accountId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="calendarId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isBusy" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isReadOnly" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="threadId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="when" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="threads" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Threads" inverseName="threadsEvents" inverseEntity="Threads" syncable="YES"/>
+        <relationship name="threadsEventsParticipants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ThreadsEventsParticipants" inverseName="threadsEvents" inverseEntity="ThreadsEventsParticipants" syncable="YES"/>
+    </entity>
+    <entity name="ThreadsEventsParticipants" representedClassName="ThreadsEventsParticipants" syncable="YES" codeGenerationType="class">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profilePicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="threadsEvents" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ThreadsEvents" inverseName="threadsEventsParticipants" inverseEntity="ThreadsEvents" syncable="YES"/>
+    </entity>
+    <entity name="Vendor" representedClassName="Vendor" syncable="YES" codeGenerationType="class">
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cards" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cards" inverseName="vendor" inverseEntity="Cards" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Cards" positionX="-54" positionY="153" width="128" height="360"/>
+        <element name="Contacts" positionX="-27" positionY="153" width="128" height="315"/>
+        <element name="Drafts" positionX="-27" positionY="153" width="128" height="180"/>
+        <element name="Favorites" positionX="-27" positionY="153" width="128" height="255"/>
+        <element name="Favorites_Participants" positionX="-18" positionY="162" width="128" height="105"/>
+        <element name="LastMessageFrom" positionX="115" positionY="171" width="128" height="105"/>
+        <element name="LastMessageTo" positionX="-27" positionY="153" width="128" height="105"/>
+        <element name="Messages" positionX="387" positionY="72" width="128" height="780"/>
+        <element name="Messages_Bcc" positionX="-27" positionY="153" width="128" height="120"/>
+        <element name="Messages_Cc" positionX="27" positionY="207" width="128" height="120"/>
+        <element name="Messages_Events" positionX="9" positionY="189" width="128" height="240"/>
+        <element name="Messages_Events_Participants" positionX="18" positionY="198" width="128" height="105"/>
+        <element name="Messages_Events_When" positionX="27" positionY="207" width="128" height="105"/>
+        <element name="Messages_Files" positionX="-27" positionY="153" width="128" height="150"/>
+        <element name="Messages_Forwarded_From" positionX="-18" positionY="162" width="128" height="105"/>
+        <element name="Messages_Forwarded_To" positionX="-9" positionY="171" width="128" height="105"/>
+        <element name="Messages_From" positionX="-9" positionY="171" width="128" height="120"/>
+        <element name="Messages_Recipients" positionX="-27" positionY="153" width="128" height="120"/>
+        <element name="Messages_Reply_To" positionX="-18" positionY="162" width="128" height="105"/>
+        <element name="Messages_Segmented_Html" positionX="0" positionY="180" width="128" height="135"/>
+        <element name="Messages_Segmented_Pro" positionX="-9" positionY="171" width="128" height="120"/>
+        <element name="Messages_To" positionX="0" positionY="180" width="128" height="120"/>
+        <element name="Messages_Unsubscribe_Links" positionX="18" positionY="198" width="128" height="105"/>
+        <element name="Participants" positionX="142" positionY="333" width="128" height="105"/>
+        <element name="Rolodexs" positionX="-27" positionY="153" width="128" height="630"/>
+        <element name="Rolodexs_Labels" positionX="-18" positionY="162" width="128" height="105"/>
+        <element name="Rolodexs_Last_Message_Events" positionX="0" positionY="180" width="128" height="210"/>
+        <element name="Rolodexs_Last_Message_From" positionX="-9" positionY="171" width="128" height="105"/>
+        <element name="Rolodexs_Named_Participants" positionX="27" positionY="207" width="128" height="135"/>
+        <element name="Rolodexs_Participants" positionX="18" positionY="198" width="128" height="105"/>
+        <element name="Spools" positionX="-18" positionY="162" width="128" height="495"/>
+        <element name="Spools_Last_Message_From" positionX="-9" positionY="171" width="128" height="90"/>
+        <element name="Spools_Named_Participants" positionX="9" positionY="189" width="128" height="120"/>
+        <element name="Spools_Participants" positionX="0" positionY="180" width="128" height="90"/>
+        <element name="Threads" positionX="-234" positionY="-0" width="128" height="585"/>
+        <element name="Threads_Avatar" positionX="-27" positionY="153" width="128" height="105"/>
+        <element name="Threads_Named_Participants" positionX="-18" positionY="162" width="128" height="150"/>
+        <element name="ThreadsEvents" positionX="-36" positionY="144" width="128" height="300"/>
+        <element name="ThreadsEventsParticipants" positionX="-27" positionY="153" width="128" height="135"/>
+        <element name="Vendor" positionX="-45" positionY="9" width="128" height="90"/>
+    </elements>
+</model>
