@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
+  - FSLineChart (0.1.7)
+  - IQKeyboardManagerSwift (6.0.2)
+  - JGProgressHUD (2.0.2)
+  - JKNotificationPanel (1.0.0)
+  - MarqueeLabel/Swift (3.1.4)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Charts
+  - FSLineChart
+  - IQKeyboardManagerSwift
+  - JGProgressHUD
+  - JKNotificationPanel
+  - MarqueeLabel/Swift
+  - SDWebImage (~> 3.7)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Charts
+    - FSLineChart
+    - IQKeyboardManagerSwift
+    - JGProgressHUD
+    - JKNotificationPanel
+    - MarqueeLabel
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
+  FSLineChart: 1b8d3727e8feb323144126d381184bf1b15e6efc
+  IQKeyboardManagerSwift: 59d4b0e140bc546c3c76ae5bb35b3dafd10b8172
+  JGProgressHUD: bf75da151936cfd3c9b674afb17e8a5df2e14a7d
+  JKNotificationPanel: 2ed551f072be7f54e23a8c2526149c69ab23da9a
+  MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+
+PODFILE CHECKSUM: 5b53f8463d0fe69fc5908f180d9af0e81f8571b3
+
+COCOAPODS: 1.5.0
